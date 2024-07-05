@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/pngwing.com.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preyer.css" />
+    <title>مواقيت الصلاة</title>
+  </head>
+  <body dir="rtl">
+    <div class="overlay">
+      <img class="image" src="images/51.jpg" alt="" />
+      <div class="Head">
+        <div class="head-text">
+          <h1>مواقيت الصلاة</h1>
+          <select name="" id="select_ciites"></select>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_towns">
+          <h1>المدينة :</h1>
+          <p id="town">القاهره</p>
+        </div>
+
+        <div class="content_time">
+          <p id="today"></p>
+          <p id="history">- - - -</p>
+        </div>
+      </div>
+      <div class="sep"></div>
+      <div class="prayers">
+        <div class="box">
+          <h3>الفجر</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>AM</span>
+              <p id="fajr">00:00</p>
+            </div>
+            <img src="images/pray1.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h3>الشروق</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>AM</span>
+              <p id="shorok">00:00</p>
+            </div>
+            <img src="images/pray2.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h3>الظهر</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>PM</span>
+              <p id="tohor">00:00</p>
+            </div>
+            <img src="images/pray3.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h3>العصر</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>PM</span>
+              <p id="asr">00:00</p>
+            </div>
+            <img src="images/pray4.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h3>المغرب</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>PM</span>
+              <p id="magrab">00:00</p>
+            </div>
+            <img src="images/pray5.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h3>العشاء</h3>
+          <div class="box-total">
+            <div class="box_time">
+              <span>PM</span>
+              <p id="asha">00:00</p>
+            </div>
+            <img src="images/pray6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="prayer.js"></script>
+    <script src="./axios.js"></script>
+  </body>
+</html>
